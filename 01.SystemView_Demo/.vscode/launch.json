@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "J-Link Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "jlink",
+            "serverpath": "D:/SEGGER/JLink_V912/JLinkGDBServerCL.exe",
+            "device": "HC32F460PETB",
+            "interface": "swd",
+            "executable": "./build/hc32f460_sysview_demo.elf",
+            "runToEntryPoint": "main",
+            "svdFile": "./Drivers/CMSIS/Device/HDSC/hc32f4xx/Source/GCC/svd/HC32F460.svd",
+            "preLaunchTask": "Build",
+            "swoConfig": {
+                "enabled": false
+            },
+            "rttConfig": {
+                "enabled": true,
+                "address": "auto",
+                "decoders": [
+                    {
+                        "port": 0,
+                        "label": "RTT Ch0",
+                        "type": "console"
+                    }
+                ]
+            }
+        }
+    ]
+}

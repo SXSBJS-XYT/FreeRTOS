@@ -1,0 +1,6 @@
+si SWD
+speed 4000
+loadfile build/hc32f460_sysview_demo.hex
+r
+g
+exit

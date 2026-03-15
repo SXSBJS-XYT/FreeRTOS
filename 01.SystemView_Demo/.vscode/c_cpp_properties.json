@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "HC32F460 GCC",
+            "compilerPath": "arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "intelliSenseMode": "gcc-arm",
+            "defines": [
+                "HC32F460",
+                "__DEBUG",
+                "USE_DDL_DRIVER"
+            ],
+            "includePath": [
+                "${workspaceFolder}/Application",
+                "${workspaceFolder}/Drivers/CMSIS/Core/Include",
+                "${workspaceFolder}/Drivers/CMSIS/Device/HDSC/hc32f4xx/Include",
+                "${workspaceFolder}/Drivers/HC32F460_DDL_Rev3.3.0/drivers/hc32_ll_driver/inc",
+                "${workspaceFolder}/Drivers/BSP",
+                "${workspaceFolder}/Middleware/FreeRTOS/Source/include",
+                "${workspaceFolder}/Middleware/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+                "${workspaceFolder}/Middleware/SEGGER"
+            ]
+        }
+    ],
+    "version": 4
+}
